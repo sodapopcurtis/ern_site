@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+
+body { background-color: #fcf7e2; }
+
+#container { width: 900px; margin: auto; }
+
+.title { margin: auto; }
+
+img { display: block; margin: auto; } 
+
+.responsive { padding: 10px 10px; float: left; width: 49.9%; }
+
+.series { width: 100%; height: auto; }
+
+.principal { width: 430px; height: auto; }
+
+.principal:hover { 
+
+@media only screen and (max-width: 899px) {
+	#container {
+		width: 100%; 
+	} 
+	
+	img {
+		max-width: 100%; 
+		height: auto; 
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.responsive {
+		width: 100%; 
+		margin: auto; 
+	} 
+	
+	img.principal { width: 100%; } 
+}
